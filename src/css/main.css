@@ -1,0 +1,78 @@
+@import "tailwindcss";
+@font-face {
+  font-family: "Estedad-Black";
+  src: url(../../public/fonts/Estedad-Black.ttf);
+}
+@font-face {
+  font-family: "Estedad-Bold";
+  src: url(../../public/fonts/Estedad-Bold.ttf);
+}
+@font-face {
+  font-family: "Estedad-ExtraBold";
+  src: url(../../public/fonts/Estedad-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "Estedad-ExtraLight";
+  src: url(../../public/fonts/Estedad-ExtraLight.ttf);
+}
+@font-face {
+  font-family: "Estedad-Light";
+  src: url(../../public/fonts/Estedad-Light.ttf);
+}
+@font-face {
+  font-family: "Estedad-Medium";
+  src: url(../../public/fonts/Estedad-Medium.ttf);
+}
+@font-face {
+  font-family: "Estedad-Regular";
+  src: url(../../public/fonts/Estedad-Regular.ttf);
+}
+@font-face {
+  font-family: "Estedad-SemiBold";
+  src: url(../../public/fonts/Estedad-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Estedad-Thin";
+  src: url(../../public/fonts/Estedad-Thin.ttf);
+}
+@theme {
+  --font-EstedadBlack: "Estedad-Black";
+  --font-EstedadBold: "Estedad-Bold";
+  --font-EstedadExtraBold: "Estedad-ExtraBold";
+  --font-EstedadExtraLight: "Estedad-ExtraLight";
+  --font-Estedadlight: "Estedad-Light";
+  --font-EstedadMedium: "Estedad-Medium";
+  --font-EstedadRegular: "Estedad-Regular";
+  --font-EstedadSemiBold: "Estedad-SemiBold";
+  --font-EstedadThin: "Estedad-Thin";
+  --radius-pill:20px;
+  --color-primary-blue:#194BF0;
+  --color-primary-yellow:#FDB713;
+  --color-body-gray:#F3F3F3;
+  --spacing-image: calc(50% - 1224px / 2);
+  --spacing-why-auto: calc(50% - 845px / 2);
+}
+@layer {
+body {
+  @apply bg-body-gray;
+}  
+}
+.bg-slogan {
+  background: url(../../public/images/home-page/image-43.png) no-repeat center center ,
+    url(../../public/images/home-page/image-42.png) no-repeat center -30px;
+}
+.button-border {
+  border: 1px solid #ffffff;
+  
+}
+.info-border {
+  border: 1px solid #d7d7d7;
+
+}
+.bg-why {
+  background: url(../../public/images/why-auto/back.png)  no-repeat center center;
+  filter: brightness(50%);
+  z-index: 0;
+  background-size: cover;
+  
+}
