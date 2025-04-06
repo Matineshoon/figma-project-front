@@ -45,34 +45,50 @@
   --font-EstedadRegular: "Estedad-Regular";
   --font-EstedadSemiBold: "Estedad-SemiBold";
   --font-EstedadThin: "Estedad-Thin";
-  --radius-pill:20px;
-  --color-primary-blue:#194BF0;
-  --color-primary-yellow:#FDB713;
-  --color-body-gray:#F3F3F3;
-  --spacing-image: calc(50% - 1224px / 2);
-  --spacing-why-auto: calc(50% - 845px / 2);
+  --radius-pill: 20px;
+  --color-primary-blue: #194bf0;
+  --color-primary-yellow: #fdb713;
+  --color-body-gray: #f3f3f3;
+  --color-gray1: #414141;
+  --color-gray2: #757575;
+  --color-gray3: #5e5e5e;
+  --color-gray4: #353535;
+  --color-gray5: #494949;
+  --color-gray6: #868686;
+  --color-gray7: #212121;
+  --spacing-image: calc(50% - 90% / 2);
+  --spacing-head-center: calc(50% - 845px / 2);
+  --spacing-bottom-box: calc(100% - 186px / 2);
+  --spacing-bottom-box-side: calc(53% + 312px / 2);
+  --spacing-bottom-box-center: calc(50% - 312px / 2);
+  --spacing-buttons-center: calc(50% - 400px / 2);
+  --spacing-steps-center: calc(50% - 392px / 2);
 }
 @layer {
-body {
-  @apply bg-body-gray;
-}  
+  body {
+    @apply bg-body-gray;
+  }
 }
 .bg-slogan {
-  background: url(../../public/images/home-page/image-43.png) no-repeat center center ,
+  background: url(../../public/images/home-page/image-43.png) no-repeat center
+      center,
     url(../../public/images/home-page/image-42.png) no-repeat center -30px;
+  background-size: ;
 }
 .button-border {
   border: 1px solid #ffffff;
-  
+}
+.button-border-blue {
+  border: 1px solid #194bf0;
 }
 .info-border {
   border: 1px solid #d7d7d7;
-
 }
 .bg-why {
-  background: url(../../public/images/why-auto/back.png)  no-repeat center center;
-  filter: brightness(50%);
-  z-index: 0;
+  background: url(../../public/images/why-auto/back.png) no-repeat center;
   background-size: cover;
-  
+  border-radius: 16px;
+}
+.stepnum-border {
+  border: 1px solid #0b2fa6;
 }
