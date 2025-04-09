@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./rent-swiper.css";
 @font-face {
   font-family: "Estedad-Black";
   src: url(../../public/fonts/Estedad-Black.ttf);
@@ -48,6 +49,7 @@
   --radius-pill: 20px;
   --color-primary-blue: #194bf0;
   --color-primary-yellow: #fdb713;
+  --color-mustard: #d79c10;
   --color-body-gray: #f3f3f3;
   --color-gray1: #414141;
   --color-gray2: #757575;
@@ -56,13 +58,21 @@
   --color-gray5: #494949;
   --color-gray6: #868686;
   --color-gray7: #212121;
+  --color-gray8: #727272;
+  --color-gray9: #9a9a9a;
   --spacing-image: calc(50% - 90% / 2);
+  --spacing-main: calc(50% - 1224px / 2);
   --spacing-head-center: calc(50% - 845px / 2);
   --spacing-bottom-box: calc(100% - 186px / 2);
   --spacing-bottom-box-side: calc(53% + 312px / 2);
   --spacing-bottom-box-center: calc(50% - 312px / 2);
+  --spacing-reserve-center: calc(50% - 1200px / 2);
+  --spacing-rentBack-center: calc(50% - 210px / 2);
+  --spacing-brands-center: calc(50% - 100% / 2);
   --spacing-buttons-center: calc(50% - 400px / 2);
   --spacing-steps-center: calc(50% - 392px / 2);
+  --spacing-stepNumbers: calc(100% - 85px);
+  --text-md: 16px;
 }
 @layer {
   body {
@@ -73,7 +83,6 @@
   background: url(../../public/images/home-page/image-43.png) no-repeat center
       center,
     url(../../public/images/home-page/image-42.png) no-repeat center -30px;
-  background-size: ;
 }
 .button-border {
   border: 1px solid #ffffff;
@@ -89,6 +98,17 @@
   background-size: cover;
   border-radius: 16px;
 }
-.stepnum-border {
-  border: 1px solid #0b2fa6;
+.bg-backRent {
+  background: url(../../public/images/rentalList/rent-back.png) no-repeat center
+    center;
+    background-size: cover;
+}
+.border-bottom-rental {
+  border-bottom: 1px solid #d7d7d7;
+}
+.footer-border {
+  border: 1px solid #868686;
+}
+.footer-bottom {
+  border-bottom: 1px solid #868686;
 }
