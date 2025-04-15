@@ -74,6 +74,7 @@
   --spacing-rentBack-center: calc(50% - 210px / 2);
   --spacing-brands-center: calc(50% - 100% / 2);
   --spacing-blog-center: calc(50% - 100px / 2);
+  --spacing-blog-comments: calc(50% - 805px / 2);
   --spacing-buttons-center: calc(50% - 400px / 2);
   --spacing-steps-center: calc(50% - 392px / 2);
   --spacing-stepNumbers: calc(100% - 85px);
@@ -132,4 +133,10 @@
 }
 .listForm {
   direction: rtl;
+}
+.border-adjust {
+  border: 0.5px solid #c2bebe;
+}
+.border-reserve {
+  border: 1px solid #9a9a9a;
 }
