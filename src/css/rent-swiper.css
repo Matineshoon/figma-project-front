@@ -50,9 +50,9 @@
   opacity: 1;
 }
 
-/* .mySwiper .swiper-slide-thumb-active {
-  opacity: 1;
-} */
+.mySwiper .swiper-slide-thumb-active {
+  border: 1px solid #20222e;
+}
 
 .swiper-slide img {
   display: block;
