@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="./src/css/output.css" />
   </head>
   <body>
-    <!-- #region blog -->
-    <div class="w-[100%] h-[450px] bg-blog relative">
-      <!-- #region header-->
+    <!-- #region blog-desktop -->
+    <div class="w-[100%] hidden lg:block h-[450px] bg-backRent relative">
+      <!-- #region header-desktop-->
       <div
-        class="flex justify-between items-center w-[90%] h-[96px] rounded-b-2xl mx-auto bg-white px-8"
+        class="lg:flex hidden justify-between items-center w-[90%] h-[96px] rounded-b-2xl mx-auto bg-white px-8"
       >
         <a href="./index.html" class="block"
           ><img src="./public/images/home-page/Logo.png" alt="" class=""
@@ -56,16 +56,94 @@
       <!-- #region Articles-->
 
       <div
-        class="flex items-center gap-[6px] justify-between pl-2 w-[100px] absolute top-[255px] left-blog-center"
+        class="flex items-center  justify-between w-[210px] absolute top-[255px] left-rentBack-center"
       >
-        <span class="font-EsExtraLight text-white text-sm">مقالات</span>
-        <img src="./public/images/svg/arrow-left-blog.svg" alt="" />
-        <span class="font-EsExtraLight text-white text-sm"> اتورنت </span>
+       
+      <div class="text-white text-sm font-Estedadlight">اتورنت</div>
+      <img src="./public/images/svg/arrow-left-header.svg " alt="" />
+      <div class="text-white text-sm font-Estedadlight">
+        لیست خودروهای اجاره ای
+      </div>
       </div>
       <!-- #endregion -->
     </div>
     <!-- #endregion -->
 
+    <!-- #region blog-mobile -->
+    <div class="w-[100%] h-[200px] block lg:hidden bg-backRent relative">
+      <!-- #region header-mobile-->
+      <div
+        class="flex lg:hidden justify-between items-center w-full h-[45px] rounded-b-xl bg-white px-6"
+      >
+        <img class="w-16 h-6" src="./public/images/home-page/Logo.png" alt="" />
+        <textarea
+          class="text-[10px] leading-6 text-[#a3a3a3] font-EsMedium resize-none px-3 w-[50%] h-[25px] rounded-2xl border-search outline-0 bg-[#f3f3f3]"
+          name="search"
+          id="search"
+          placeholder="جستجو..."
+        ></textarea>
+        <div class="flex items-center relative group">
+          <!-- Main Menu Item -->
+          <button class="rounded-md">
+            <img src="./public/images/svg/bars.svg" alt="" />
+          </button>
+
+          <!-- Submenu -->
+          <div
+            class="w-[360px] absolute hidden -left-14 top-5 duration-200 group-hover:block bg-[#f3f3f3] shadow-lg rounded-md mt-2"
+          >
+            <div class="flex justify-between p-3 gap-3 items-center">
+              <a class="block" href="reservation.html"
+                ><p
+                  class="line-clamp-1 text-[#353535] text-[9px] font-EsRegular"
+                >
+                  رزرو خودرو
+                </p></a
+              >
+              <a class="block" href="Rental-list.html"
+                ><p class="text-[#353535] text-[9px] font-EsRegular">
+                  خدمات ما
+                </p></a
+              >
+              <a class="block" href="blog.html"
+                ><p class="text-[#353535] text-[9px] font-EsRegular">بلاگ</p></a
+              >
+              <a class="block" href="#"
+                ><p class="text-[#353535] text-[9px] font-EsRegular">
+                  درباره ما
+                </p></a
+              >
+              <a class="block" href="#"
+                ><p class="text-[#353535] text-[9px] font-EsRegular">
+                  تماس با ما
+                </p></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="w-9 h-5 rounded-lg bg-primary-blue">
+          <a
+            href="#"
+            class="flex items-center justify-center font-EstedadMedium text-xs text-white"
+            >ورود</a
+          >
+        </div>
+      </div>
+      <!-- #endregion -->
+      <!-- #region Articles-->
+
+      <div
+        class="flex items-center gap-[6px] justify-between pl-2 w-[100px] absolute top-[110px] left-blog-center"
+      >
+        <span class="font-EsExtraLight text-white text-[14px]">مقالات</span>
+        <img src="./public/images/svg/arrow-left-blog.svg" alt="" />
+        <span class="font-EsExtraLight text-white text-[14px]"> اتورنت </span>
+      </div>
+      <!-- #endregion -->
+    </div>
+    <!-- #endregion -->
+
+   
     <!-- #region reserv-->
     <div
       class="flex gap-[24px] w-[1224px] h-[1116px] absolute top-[510px] left-main"
@@ -618,7 +696,7 @@
 
    <!-- #region footer-desktop-->
    <div
-   class="hidden lg:flex flex-col items-center absolute gap-4 top-[1820px] left-main rounded-2xl py-14 px-6 w-[1224px] h-[432px] bg-[#1E1E1EE5] shadow-md shadow-[#2b2b2b]"
+   class="hidden lg:flex flex-col items-center absolute gap-4 top-[1700px] left-main rounded-2xl py-14 px-6 w-[1224px] h-[432px] bg-[#1E1E1EE5] shadow-md shadow-[#2b2b2b]"
  >
    <div
      class="flex items-center gap-[81px] w-[1120px] h-[101px] footer-border rounded-2xl p-4"
