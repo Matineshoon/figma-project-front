@@ -64,7 +64,7 @@
   --color-gray11: #606060;
   --color-black:#0c0c0c;
   --spacing-image: calc(50% - 90% / 2);
-  --spacing-main: calc(50% - 1224px / 2);
+  --spacing-main: calc(50% - 90% / 2);
   --spacing-input: calc(25px / 2);
   --spacing-head-center: calc(50% - 845px / 2);
   --spacing-bottom-box: calc(100% - 186px / 2);
@@ -91,8 +91,10 @@
     url(../../public/images/home-page/image-42.png) no-repeat center -30px;
     
 }
+
+
 .bg-slogan-mobile {
-  background: url(../../public/images/home-page/image-43.png) no-repeat center
+  background: url(../../public/images/home-page/image-42.png) no-repeat center
       center;
       background-size: cover;
     

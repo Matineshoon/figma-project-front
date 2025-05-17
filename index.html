@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="./src/css/output.css" />
   </head>
   <body>
-    <!-- #region slogan-->
-    <div class="bg-slogan w-full h-[683px]">
-      <!-- #region header-->
+    <!-- #region slogan-desktop-->
+    <div class="bg-slogan bg-cover hidden lg:block w-[100%] h-[683px]">
+      <!-- #region header-desktop-->
       <div
-        class="flex justify-between items-center w-[90%] h-[96px] rounded-b-2xl mx-auto bg-white px-8"
+        class="lg:flex hidden justify-between items-center w-[90%] h-[96px] rounded-b-2xl mx-auto bg-white px-8"
       >
         <a href="./index.html" class="block"
           ><img src="./public/images/home-page/Logo.png" alt="" class=""
@@ -88,7 +88,7 @@
       <!-- #endregion -->
       <!-- #region rental-->
       <div
-        class="flex flex-col gap-4 w-[1224] h-[200px] absolute p-6 rounded-2xl info-border bg-white top-[580px] left-main"
+        class="flex flex-col gap-4 w-[90%] h-[200px] absolute p-6 rounded-2xl info-border bg-white top-[580px] left-main"
       >
         <div class="flex justify-between items-center my-2 w-full h-10">
           <div class="flex gap-2 items-center">
@@ -227,9 +227,110 @@
       <!-- #endregion -->
     </div>
     <!-- #endregion -->
+    <!-- #region slogan-mobile-->
+    <div
+      class="lg:hidden w- left-index-center-2 bg-amber-200 mx-auto h-52 bg-slogan-mobile"
+    >
+      <!-- #region header-mobile-->
+      <div
+        class="flex lg:hidden justify-between items-center w-full h-[45px] rounded-b-xl bg-white px-6"
+      >
+        <a href="./index.html" class="block">
+          <img class="w-16 h-6" src="./public/images/home-page/Logo.png" alt=""
+        /></a>
+        <textarea
+          class="text-[10px] leading-6 text-[#a3a3a3] font-EstedadMedium resize-none px-3 w-[50%] h-[25px] rounded-2xl border-search outline-0 bg-body-gray"
+          name="search"
+          id="search"
+          placeholder="جستجو..."
+        ></textarea>
+        <div class="flex items-center relative group">
+          <!-- Main Menu Item -->
+          <button class="rounded-md">
+            <img src="./public/images/svg/bars.svg" alt="" />
+          </button>
+
+          <!-- Submenu -->
+          <div
+            class="w-[360px] absolute hidden -left-14 top-5 duration-200 group-hover:block bg-[#f3f3f3] shadow-lg rounded-md mt-2"
+          >
+            <div class="flex justify-between p-3 gap-3 items-center">
+              <a class="block" href="reservation.html"
+                ><p
+                  class="line-clamp-1 text-[#353535] text-[9px] font-EstedadRegular"
+                >
+                  رزرو خودرو
+                </p></a
+              >
+              <a class="block" href="Rental-list.html"
+                ><p class="text-[#353535] text-[9px] font-EstedadRegular">
+                  خدمات ما
+                </p></a
+              >
+              <a class="block" href="blog.html"
+                ><p class="text-[#353535] text-[9px] font-EstedadRegular">
+                  بلاگ
+                </p></a
+              >
+              <a class="block" href="#"
+                ><p class="text-[#353535] text-[9px] font-EstedadRegular">
+                  درباره ما
+                </p></a
+              >
+              <a class="block" href="#"
+                ><p class="text-[#353535] text-[9px] font-EstedadRegular">
+                  تماس با ما
+                </p></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="w-9 h-5 rounded-lg bg-primary-blue">
+          <a
+            href="#"
+            class="flex items-center justify-center font-EstedadMedium text-xs text-white"
+            >ورود</a
+          >
+        </div>
+      </div>
+      <!-- #endregion -->
+      <!-- #region AutoRent-Data-mobile -->
+      <div class="w-[335px] h-[124px] absolute top-[75px] right-[12px]">
+        <h1 class="font-EstedadMedium text-[16px] text-primary-yellow">
+          اُتـــو رِنت؛ سریع، <br />آسان و به صرفه
+        </h1>
+      </div>
+      <div class="w-[460px] h-[36px] absolute top-[120px] right-3">
+        <p class="text-body-gray text-xs leading-9 font-EstedadRegular">
+          سرویس دهنده رزرو خودرو در ایران در کمترین زمان ممکن!
+        </p>
+      </div>
+      <div class="flex gap-10">
+        <button
+          class="flex justify-center items-center gap-2 w-28 h-[30px] bg-primary-yellow absolute top-[150px] right-[12px] rounded-[7px]"
+        >
+          <img class="w-5 h-5" src="./public/images/svg/car.svg" alt="" />
+          <p class="text-xs font-EstedadRegular font-bold">رزرو آسان خودرو</p>
+        </button>
+        <button
+          class="flex justify-center items-center gap-2 w-24 h-[30px] bg-transparent button-border absolute top-[150px] right-[130px] rounded-[7px]"
+        >
+          <img
+            class="w-5 h-5"
+            src="./public/images/svg/arrow-left.svg"
+            alt=""
+          />
+          <p class="font-EstedadMedium text-xs text-white">تماس با ما</p>
+        </button>
+      </div>
+      <!-- #endregion -->
+    </div>
+
+    <!-- #endregion -->
+
     <!-- #region brands-->
     <div
-      class="absolute lg:top-[830px] top-[210px] flex items-center px-2 w-full left-brands-center h-20 opacity-35 justify-around lg:justify-between"
+      class="lg:absolute my-4 lg:my-0 lg:top-[830px] flex items-center px-2 w-full left-brands-center h-20 opacity-35 justify-around lg:justify-between"
     >
       <div class="w-fit">
         <img src="./public/images/brands/land-rover.png" alt="" />
@@ -252,7 +353,7 @@
       <div class="w-fit hidden lg:block">
         <img src="./public/images/brands/Honda.png" alt="" />
       </div>
-      <div class="w-fit ">
+      <div class="w-fit">
         <img src="./public/images/brands/Marcedes.png" alt="" />
       </div>
       <div class="w-fit hidden lg:block">
@@ -265,10 +366,10 @@
     <!-- #endregion -->
     <!-- #region why-autoRent-->
     <div
-      class="absolute w-[1224px] h-[292px] mx-auto rounded-2xl top-[950px] left-main bg-why"
+      class="lg:absolute relative w-[90%] h-[292px] mx-auto my-4 lg:my-0 rounded-2xl lg:top-[950px] lg:left-main bg-why"
     >
       <div
-        class="flex flex-col w-[845px] h-[150px] absolute rounded-2xl top-6 gap-2 items-center justify-center left-head-center"
+        class="flex flex-col lg:w-[845px] w-[80%] h-[150px] lg:absolute mx-auto rounded-2xl lg:pt-0 pt-4 top-6 gap-2 items-center lg:justify-center left-head-center"
       >
         <h3
           class="text-2xl text-primary-yellow text-center font-EstedadMedium z-10"
@@ -276,7 +377,7 @@
           چــــــرا اُتو رِنت؟
         </h3>
         <p
-          class="text-lg font-Estedadlight text-white leading-[180%] h-24 w-full"
+          class="text-lg font-Estedadlight line-clamp-3 text-justify text-white leading-[180%] h-24 w-full"
         >
           اجاره خودرو از یک شرکت اجاره خودرو با سابقه به شما کمک می‌کند تا در
           مسافرت ها، قرار ملاقات‌ های مهم، مجالس و مراسم‌های خانوادگی ماشین
@@ -286,7 +387,7 @@
         </p>
       </div>
       <div
-        class="flex flex-col items-center justify-center w-[312px] h-[186px] absolute top-bottom-box left-bottom-box-side bg-white py-4 px-6 info-border rounded-2xl gap-2"
+        class="lg:flex hidden flex-col items-center justify-center w-[312px] h-[186px] absolute top-bottom-box left-bottom-box-side bg-white py-4 px-6 info-border rounded-2xl gap-2"
       >
         <img src="./public/images/why-auto/delivery.png" alt="" />
         <h3 class="font-EstedadSemiBold text-gray1">تحویل در محل</h3>
@@ -297,7 +398,7 @@
         </p>
       </div>
       <div
-        class="flex flex-col items-center justify-center w-[312px] h-[186px] absolute top-bottom-box left-bottom-box-center bg-white py-4 px-6 info-border rounded-2xl gap-2"
+        class="lg:flex hidden flex-col items-center justify-center w-[312px] h-[186px] absolute top-bottom-box left-bottom-box-center bg-white py-4 px-6 info-border rounded-2xl gap-2"
       >
         <img src="./public/images/why-auto/support.png" alt="" />
         <h3 class="font-EstedadSemiBold text-gray1">پشتیبانی 24 ساعته</h3>
@@ -308,7 +409,7 @@
         </p>
       </div>
       <div
-        class="flex flex-col items-center justify-center w-[312px] h-[186px] absolute top-bottom-box right-bottom-box-side bg-white py-4 px-6 info-border rounded-2xl gap-2"
+        class="lg:flex hidden flex-col items-center justify-center w-[312px] h-[186px] absolute top-bottom-box right-bottom-box-side bg-white py-4 px-6 info-border rounded-2xl gap-2"
       >
         <img src="./public/images/why-auto/price.png" alt="" />
         <h3 class="font-EstedadSemiBold text-gray1">قیمت مناسب</h3>
@@ -318,43 +419,60 @@
           هدف ما، ارائه بهترین خدمات با مناسب ترین قیمت ممکن است.
         </p>
       </div>
+      <div class="flex lg:hidden justify-between items-center px-4 mt-8">
+        <div
+          class="flex items-center justify-center border-info shadow-xs bg-white rounded-xl p-4"
+        >
+          <img src="./public/images/why-auto/delivery.png" alt="" />
+        </div>
+        <div
+          class="flex items-center justify-center border-info shadow-xs bg-white rounded-xl p-4"
+        >
+          <img src="./public/images/why-auto/support.png" alt="" />
+        </div>
+        <div
+          class="flex items-center justify-center border-info shadow-xs bg-white rounded-xl p-4"
+        >
+          <img src="./public/images/why-auto/price.png" alt="" />
+        </div>
+      </div>
     </div>
     <!-- #endregion -->
     <!-- #region category-->
 
     <div
-      class="flex items-center gap-2 w-[1224px] h-[144px] absolute top-[1400px] left-main"
+      class="flex my-4 lg:my-0 lg:flex-row flex-col gap-6 lg:gap-0 items-center lg:justify-around lg:w-[90%] lg:h-[144px] lg:absolute top-[1400px] left-main"
     >
       <div
-        class="flex flex-col items-center justify-center w-[239px] h-[144px] pt-1 bg-white rounded-2xl info-border"
+        class="flex flex-col items-center justify-center lg:w-[239px] lg:h-[144px] w-10/12 pt-1 bg-white rounded-2xl info-border"
       >
         <h4 class="text-[#353535] font-EstedadMedium text-2xl">کوپه</h4>
         <img src="./public/images/category/coupe.png" alt="" />
         <img src="./public/images/category/underline.png" alt="" />
       </div>
       <div
-        class="flex flex-col items-center justify-center w-[239px] h-[144px] pt-1 bg-white rounded-2xl info-border"
+        class="flex flex-col items-center justify-center lg:w-[239px] lg:h-[144px] w-10/12 pt-1 bg-white rounded-2xl info-border"
       >
         <h4 class="text-[#353535] font-EstedadMedium text-2xl">سدان</h4>
         <img src="./public/images/category/sedan.png" alt="" />
         <img src="./public/images/category/underline.png" alt="" />
       </div>
       <div
-        class="flex flex-col items-center justify-center w-[239px] h-[144px] pt-1 bg-white rounded-2xl info-border"
+        class="flex flex-col items-center justify-center lg:w-[239px] lg:h-[144px] w-10/12 pt-1 bg-white rounded-2xl info-border"
       >
         <h4 class="text-[#353535] font-EstedadMedium text-2xl">کروک</h4>
         <img src="./public/images/category/kerook.png" alt="" />
         <img src="./public/images/category/underline.png" alt="" />
       </div>
       <div
-        class="flex flex-col items-center justify-center w-[239px] h-[144px] pt-1 bg-white rounded-2xl info-border"
+        class="flex flex-col items-center justify-center lg:w-[239px] lg:h-[144px] w-10/12 pt-1 bg-white rounded-2xl info-border"
       >
         <h4 class="text-[#353535] font-EstedadMedium text-2xl">شاسی بلند</h4>
         <img src="./public/images/category/suv.png" alt="" />
         <img src="./public/images/category/underline.png" alt="" />
       </div>
       <div
-        class="flex flex-col items-center justify-center w-[239px] h-[144px] pt-1 bg-white rounded-2xl info-border"
+        class="flex flex-col items-center justify-center lg:w-[239px] lg:h-[144px] w-10/12 pt-1 bg-white rounded-2xl info-border"
       >
         <h4 class="text-[#353535] font-EstedadMedium text-2xl">اسپرت</h4>
         <img src="./public/images/category/sport.png" alt="" />
@@ -364,7 +482,7 @@
     <!-- #endregion -->
     <!-- #region mojoodi-->
     <div
-      class="w-[845px] h-[109px] flex flex-col items-center gap-5 absolute top-[1591px] left-head-center"
+      class="lg:w-[845px] lg:h-[109px] flex flex-col items-center gap-5 lg:absolute top-[1591px] left-head-center"
     >
       <p class="font-EstedadExtraLight text-gray3 text-2xl">
         مشاهده موجودی خودروها
@@ -375,32 +493,32 @@
       </p>
     </div>
     <div
-      class="w-[400px] flex gap-2 h-12 absolute top-[1716px] left-buttons-center"
+      class="lg:w-[400px] flex justify-center gap-2 h-12 lg:absolute mt-4 lg:mt-0 top-[1716px] left-buttons-center"
     >
       <a href="#" class="block"
         ><div
-          class="flex items-center justify-center w-[128px] h-[48px] rounded-lg bg-primary-blue text-[14px] text-white font-EstedadMedium"
+          class="flex items-center justify-center w-[80px] lg:w-[128px] h-[48px] rounded-lg bg-primary-blue text-[14px] text-white font-EstedadMedium"
         >
           پرطرفدار
         </div></a
       >
       <a href="#" class="block"
         ><div
-          class="flex items-center justify-center w-[128px] h-[48px] rounded-lg button-border-blue bg-transparent text-[14px] text-primary-blue font-EstedadMedium"
+          class="flex items-center justify-center w-[80px] lg:w-[128px] h-[48px] rounded-lg button-border-blue bg-transparent text-[14px] text-primary-blue font-EstedadMedium"
         >
           لوکس
         </div></a
       >
       <a href="#" class="block">
         <div
-          class="flex items-center justify-center w-[128px] h-[48px] rounded-lg button-border-blue bg-transparent text-[14px] text-primary-blue font-EstedadMedium"
+          class="flex items-center justify-center w-[80px] lg:w-[128px] h-[48px] rounded-lg button-border-blue bg-transparent text-[14px] text-primary-blue font-EstedadMedium"
         >
           اقتصادی
         </div></a
       >
     </div>
     <div
-      class="flex w-[184px] h-[48px] items-center justify-center gap-2 rounded-[8px] absolute top-[1716px] left-[115px]"
+      class="lg:flex hidden w-[184px] h-[48px] items-center justify-center gap-2 rounded-[8px] absolute top-[1716px] left-[115px]"
     >
       <a href="#" class="flex w-fit"
         ><p class="text-[#194BF0] text-lg font-EstedadMedium">مشاهده همه</p>
@@ -409,380 +527,345 @@
     </div>
     <!-- #region reservation-->
     <div
-      class="flex flex-row flex-wrap w-[1224px] h-[1044px] absolute top-[1788px] left-main gap-4"
+      class="flex lg:flex-row flex-col flex-wrap mt-4 lg:mt-0 w-[90%] items-center justify-center lg:h-[1044px] lg:absolute mx-auto top-[1788px] left-main gap-4"
     >
       <div
-        class="flex flex-col w-[392px] h-[510px] rounded-2xl info-border p-4 gap-2 bg-white"
+        class="flex flex-col max-w-sm w-full h-auto rounded-2xl info-border p-4 gap-2 bg-white"
       >
-        <div class="flex flex-col w-[360px] h-[401px] pb-3 gap-2 border-bottom">
-          <img src="./public/images/reserve/benz.png" alt="" />
-          <div class="flex flex-col w-full h-[52px] gap-2 py-2">
-            <h6
-              class="w-full h-[22px] text-[#0C0C0C] text-[16px] font-EstedadSemiBold"
-            >
+        <div
+          class="flex flex-col w-full h-auto pb-3 gap-2 border-b border-gray-200"
+        >
+          <img
+            src="./public/images/reserve/benz.png"
+            alt="Car Image"
+            class="w-full h-auto rounded-md"
+          />
+          <div class="flex flex-col w-full h-auto gap-2 py-2">
+            <h6 class="w-full text-[#0C0C0C] text-base font-EstedadSemiBold">
               اجاره بنز E350 سدان
             </h6>
-            <div class="flex items-center w-full h-[22px] p-2 gap-1">
-              <p class="text-gray6 text-[10px] font-EstedadRegular">مدل :</p>
-              <p class="text-gray5 text-[10px] font-EstedadRegular">۲۰۱۶</p>
+            <div class="flex items-center w-full gap-1">
+              <p class="text-gray-600 text-xs font-EstedadRegular">مدل :</p>
+              <p class="text-gray-500 text-xs font-EstedadRegular">۲۰۱۶</p>
             </div>
           </div>
           <div
-            class="flex items-center bg-body-gray w-full h-[44px] px-2 rounded-lg gap-2"
+            class="flex items-center bg-body-gray w-full px-2 py-2 rounded-lg gap-2"
           >
-            <p class="text-xs h-[22px] text-gray7 font-EstedadRegular">
+            <p class="text-xs text-gray7 font-EstedadRegular">
               از ۱ تا ۳۰ روز :
             </p>
-            <p
-              class="w-[238px] h-[28px] text-primary-blue font-EstedadSemiBold"
-            >
+            <p class="w-[65%] text-primary-blue font-EstedadSemiBold">
               ۸,۵۰۰,۰۰۰
             </p>
-            <p class="h-[22px] text-xs text-gray5 font-EstedadRegular">
-              روزانه
-            </p>
+            <p class="text-xs text-gray5 font-EstedadRegular">روزانه</p>
           </div>
           <div
-            class="flex items-center bg-body-gray w-full h-[44px] px-2 rounded-lg gap-2"
+            class="flex items-center bg-body-gray w-full px-2 py-2 rounded-lg gap-2"
           >
-            <p class="text-xs h-[22px] text-gray7 font-EstedadRegular">
+            <p class="text-xs text-gray7 font-EstedadRegular">
               از ۱ تا ۳۰ روز :
             </p>
-            <p
-              class="text-[15px] w-[230px] h-[28px] text-primary-blue font-EstedadSemiBold"
-            >
+            <p class="w-[65%] text-primary-blue font-EstedadSemiBold">
               ۸,۵۰۰,۰۰۰
             </p>
-            <p class="h-[22px] text-xs text-gray5 font-EstedadRegular">
-              ماهانه
-            </p>
+            <p class="text-xs text-gray5 font-EstedadRegular">ماهانه</p>
           </div>
         </div>
-        <div class="flex justify-between items-center w-[358px] h-[21px]">
-          <p class="text-xs text-gray7 font-EstedadMedium">مبلغ ضمانت:</p>
-          <p class="text-xs text-gray7 font-EstedadBold">۸۰ میلیون تومان</p>
+        <div class="flex justify-between items-center w-full">
+          <p class="text-xs text-gray-700 font-EstedadMedium">مبلغ ضمانت:</p>
+          <p class="text-xs text-gray-700 font-EstedadBold">۸۰ میلیون تومان</p>
         </div>
         <div
-          class="flex items-center justify-center w-[360px] h-[40px] rounded-lg bg-[#194BF0]"
+          class="flex items-center justify-center w-full py-3 rounded-lg bg-primary-blue"
         >
-          <a href="#" class="block"
-            ><p class="font-EstedadRegular text-white text-sm">
-              درخواست رزرو
-            </p></a
-          >
+          <a href="#" class="block">
+            <p class="font-EstedadRegular text-white text-sm">درخواست رزرو</p>
+          </a>
         </div>
       </div>
       <div
-        class="flex flex-col w-[392px] h-[510px] rounded-2xl info-border p-4 gap-2 bg-white"
+        class="flex flex-col max-w-sm w-full h-auto rounded-2xl info-border p-4 gap-2 bg-white"
       >
-        <div class="flex flex-col w-[360px] h-[401px] pb-3 gap-2 border-bottom">
-          <img src="./public/images/reserve/land.png" alt="" />
-          <div class="flex flex-col w-full h-[52px] gap-2 py-2">
-            <h6
-              class="w-full h-[22px] text-[#0C0C0C] text-[16px] font-EstedadSemiBold"
-            >
+        <div
+          class="flex flex-col w-full h-auto pb-3 gap-2 border-b border-gray-200"
+        >
+          <img
+            src="./public/images/reserve/land.png"
+            alt="Car Image"
+            class="w-full h-auto rounded-md"
+          />
+          <div class="flex flex-col w-full h-auto gap-2 py-2">
+            <h6 class="w-full text-[#0C0C0C] text-base font-EstedadSemiBold">
               اجاره تویوتا لندکروز در تهران 2013
             </h6>
-            <div class="flex items-center w-full h-[22px] p-2 gap-1">
-              <p class="text-gray6 text-[10px] font-EstedadRegular">مدل :</p>
-              <p class="text-gray5 text-[10px] font-EstedadRegular">۲۰۱۶</p>
+            <div class="flex items-center w-full gap-1">
+              <p class="text-gray-600 text-xs font-EstedadRegular">مدل :</p>
+              <p class="text-gray-500 text-xs font-EstedadRegular">۲۰۱۶</p>
             </div>
           </div>
           <div
-            class="flex items-center bg-body-gray w-full h-[44px] px-2 rounded-lg gap-2"
+            class="flex items-center bg-body-gray w-full px-2 py-2 rounded-lg gap-2"
           >
-            <p class="text-xs h-[22px] text-gray7 font-EstedadRegular">
+            <p class="text-xs text-gray7 font-EstedadRegular">
               از ۱ تا ۳۰ روز :
             </p>
-            <p
-              class="w-[238px] h-[28px] text-primary-blue font-EstedadSemiBold"
-            >
+            <p class="w-[65%] text-primary-blue font-EstedadSemiBold">
               ۸,۵۰۰,۰۰۰
             </p>
-            <p class="h-[22px] text-xs text-gray5 font-EstedadRegular">
-              روزانه
-            </p>
+            <p class="text-xs text-gray5 font-EstedadRegular">روزانه</p>
           </div>
           <div
-            class="flex items-center bg-body-gray w-full h-[44px] px-2 rounded-lg gap-2"
+            class="flex items-center bg-body-gray w-full px-2 py-2 rounded-lg gap-2"
           >
-            <p class="text-xs h-[22px] text-gray7 font-EstedadRegular">
+            <p class="text-xs text-gray7 font-EstedadRegular">
               از ۱ تا ۳۰ روز :
             </p>
-            <p
-              class="text-[15px] w-[230px] h-[28px] text-primary-blue font-EstedadSemiBold"
-            >
+            <p class="w-[65%] text-primary-blue font-EstedadSemiBold">
               ۸,۵۰۰,۰۰۰
             </p>
-            <p class="h-[22px] text-xs text-gray5 font-EstedadRegular">
-              ماهانه
-            </p>
+            <p class="text-xs text-gray5 font-EstedadRegular">ماهانه</p>
           </div>
         </div>
-        <div class="flex justify-between items-center w-[358px] h-[21px]">
-          <p class="text-xs text-gray7 font-EstedadMedium">مبلغ ضمانت:</p>
-          <p class="text-xs text-gray7 font-EstedadBold">۸۰ میلیون تومان</p>
+        <div class="flex justify-between items-center w-full">
+          <p class="text-xs text-gray-700 font-EstedadMedium">مبلغ ضمانت:</p>
+          <p class="text-xs text-gray-700 font-EstedadBold">۸۰ میلیون تومان</p>
         </div>
         <div
-          class="flex items-center justify-center w-[360px] h-[40px] rounded-lg bg-[#194BF0]"
+          class="flex items-center justify-center w-full py-3 rounded-lg bg-primary-blue"
         >
-          <a href="#" class="block"
-            ><p class="font-EstedadRegular text-white text-sm">
-              درخواست رزرو
-            </p></a
-          >
+          <a href="#" class="block">
+            <p class="font-EstedadRegular text-white text-sm">درخواست رزرو</p>
+          </a>
         </div>
       </div>
       <div
-        class="flex flex-col w-[392px] h-[510px] rounded-2xl info-border p-4 gap-2 bg-white"
+        class="flex flex-col max-w-sm w-full h-auto rounded-2xl info-border p-4 gap-2 bg-white"
       >
-        <div class="flex flex-col w-[360px] h-[401px] pb-3 gap-2 border-bottom">
-          <img src="./public/images/reserve/genesis.png" alt="" />
-          <div class="flex flex-col w-full h-[52px] gap-2 py-2">
-            <h6
-              class="w-full h-[22px] text-[#0C0C0C] text-[16px] font-EstedadSemiBold"
-            >
+        <div
+          class="flex flex-col w-full h-auto pb-3 gap-2 border-b border-gray-200"
+        >
+          <img
+            src="./public/images/reserve/genesis.png"
+            alt="Car Image"
+            class="w-full h-auto rounded-md"
+          />
+          <div class="flex flex-col w-full h-auto gap-2 py-2">
+            <h6 class="w-full text-[#0C0C0C] text-base font-EstedadSemiBold">
               اجاره جنسیس کوپه
             </h6>
-            <div class="flex items-center w-full h-[22px] p-2 gap-1">
-              <p class="text-gray6 text-[10px] font-EstedadRegular">مدل :</p>
-              <p class="text-gray5 text-[10px] font-EstedadRegular">۲۰۱۶</p>
+            <div class="flex items-center w-full gap-1">
+              <p class="text-gray-600 text-xs font-EstedadRegular">مدل :</p>
+              <p class="text-gray-500 text-xs font-EstedadRegular">۲۰۱۶</p>
             </div>
           </div>
           <div
-            class="flex items-center bg-body-gray w-full h-[44px] px-2 rounded-lg gap-2"
+            class="flex items-center bg-body-gray w-full px-2 py-2 rounded-lg gap-2"
           >
-            <p class="text-xs h-[22px] text-gray7 font-EstedadRegular">
+            <p class="text-xs text-gray7 font-EstedadRegular">
               از ۱ تا ۳۰ روز :
             </p>
-            <p
-              class="w-[238px] h-[28px] text-primary-blue font-EstedadSemiBold"
-            >
+            <p class="w-[65%] text-primary-blue font-EstedadSemiBold">
               ۸,۵۰۰,۰۰۰
             </p>
-            <p class="h-[22px] text-xs text-gray5 font-EstedadRegular">
-              روزانه
-            </p>
+            <p class="text-xs text-gray5 font-EstedadRegular">روزانه</p>
           </div>
           <div
-            class="flex items-center bg-body-gray w-full h-[44px] px-2 rounded-lg gap-2"
+            class="flex items-center bg-body-gray w-full px-2 py-2 rounded-lg gap-2"
           >
-            <p class="text-xs h-[22px] text-gray7 font-EstedadRegular">
+            <p class="text-xs text-gray7 font-EstedadRegular">
               از ۱ تا ۳۰ روز :
             </p>
-            <p
-              class="text-[15px] w-[230px] h-[28px] text-primary-blue font-EstedadSemiBold"
-            >
+            <p class="w-[65%] text-primary-blue font-EstedadSemiBold">
               ۸,۵۰۰,۰۰۰
             </p>
-            <p class="h-[22px] text-xs text-gray5 font-EstedadRegular">
-              ماهانه
-            </p>
+            <p class="text-xs text-gray5 font-EstedadRegular">ماهانه</p>
           </div>
         </div>
-        <div class="flex justify-between items-center w-[358px] h-[21px]">
-          <p class="text-xs text-gray7 font-EstedadMedium">مبلغ ضمانت:</p>
-          <p class="text-xs text-gray7 font-EstedadBold">۸۰ میلیون تومان</p>
+        <div class="flex justify-between items-center w-full">
+          <p class="text-xs text-gray-700 font-EstedadMedium">مبلغ ضمانت:</p>
+          <p class="text-xs text-gray-700 font-EstedadBold">۸۰ میلیون تومان</p>
         </div>
         <div
-          class="flex items-center justify-center w-[360px] h-[40px] rounded-lg bg-[#194BF0]"
+          class="flex items-center justify-center w-full py-3 rounded-lg bg-primary-blue"
         >
-          <a href="#" class="block"
-            ><p class="font-EstedadRegular text-white text-sm">
-              درخواست رزرو
-            </p></a
-          >
+          <a href="#" class="block">
+            <p class="font-EstedadRegular text-white text-sm">درخواست رزرو</p>
+          </a>
         </div>
       </div>
       <div
-        class="flex flex-col w-[392px] h-[510px] rounded-2xl info-border p-4 gap-2 bg-white"
+        class="flex flex-col max-w-sm w-full h-auto rounded-2xl info-border p-4 gap-2 bg-white"
       >
-        <div class="flex flex-col w-[360px] h-[401px] pb-3 gap-2 border-bottom">
-          <img src="./public/images/reserve/bmw.png" alt="" />
-          <div class="flex flex-col w-full h-[52px] gap-2 py-2">
-            <h6
-              class="w-full h-[22px] text-[#0C0C0C] text-[16px] font-EstedadSemiBold"
-            >
+        <div
+          class="flex flex-col w-full h-auto pb-3 gap-2 border-b border-gray-200"
+        >
+          <img
+            src="./public/images/reserve/bmw.png"
+            alt="Car Image"
+            class="w-full h-auto rounded-md"
+          />
+          <div class="flex flex-col w-full h-auto gap-2 py-2">
+            <h6 class="w-full text-[#0C0C0C] text-base font-EstedadSemiBold">
               اجاره بی ام و 528
             </h6>
-            <div class="flex items-center w-full h-[22px] p-2 gap-1">
-              <p class="text-gray6 text-[10px] font-EstedadRegular">مدل :</p>
-              <p class="text-gray5 text-[10px] font-EstedadRegular">۲۰۱۶</p>
+            <div class="flex items-center w-full gap-1">
+              <p class="text-gray-600 text-xs font-EstedadRegular">مدل :</p>
+              <p class="text-gray-500 text-xs font-EstedadRegular">۲۰۱۶</p>
             </div>
           </div>
           <div
-            class="flex items-center bg-body-gray w-full h-[44px] px-2 rounded-lg gap-2"
+            class="flex items-center bg-body-gray w-full px-2 py-2 rounded-lg gap-2"
           >
-            <p class="text-xs h-[22px] text-gray7 font-EstedadRegular">
+            <p class="text-xs text-gray7 font-EstedadRegular">
               از ۱ تا ۳۰ روز :
             </p>
-            <p
-              class="w-[238px] h-[28px] text-primary-blue font-EstedadSemiBold"
-            >
+            <p class="w-[65%] text-primary-blue font-EstedadSemiBold">
               ۸,۵۰۰,۰۰۰
             </p>
-            <p class="h-[22px] text-xs text-gray5 font-EstedadRegular">
-              روزانه
-            </p>
+            <p class="text-xs text-gray5 font-EstedadRegular">روزانه</p>
           </div>
           <div
-            class="flex items-center bg-body-gray w-full h-[44px] px-2 rounded-lg gap-2"
+            class="flex items-center bg-body-gray w-full px-2 py-2 rounded-lg gap-2"
           >
-            <p class="text-xs h-[22px] text-gray7 font-EstedadRegular">
+            <p class="text-xs text-gray7 font-EstedadRegular">
               از ۱ تا ۳۰ روز :
             </p>
-            <p
-              class="text-[15px] w-[230px] h-[28px] text-primary-blue font-EstedadSemiBold"
-            >
+            <p class="w-[65%] text-primary-blue font-EstedadSemiBold">
               ۸,۵۰۰,۰۰۰
             </p>
-            <p class="h-[22px] text-xs text-gray5 font-EstedadRegular">
-              ماهانه
-            </p>
+            <p class="text-xs text-gray5 font-EstedadRegular">ماهانه</p>
           </div>
         </div>
-        <div class="flex justify-between items-center w-[358px] h-[21px]">
-          <p class="text-xs text-gray7 font-EstedadMedium">مبلغ ضمانت:</p>
-          <p class="text-xs text-gray7 font-EstedadBold">۸۰ میلیون تومان</p>
+        <div class="flex justify-between items-center w-full">
+          <p class="text-xs text-gray-700 font-EstedadMedium">مبلغ ضمانت:</p>
+          <p class="text-xs text-gray-700 font-EstedadBold">۸۰ میلیون تومان</p>
         </div>
         <div
-          class="flex items-center justify-center w-[360px] h-[40px] rounded-lg bg-[#194BF0]"
+          class="flex items-center justify-center w-full py-3 rounded-lg bg-primary-blue"
         >
-          <a href="#" class="block"
-            ><p class="font-EstedadRegular text-white text-sm">
-              درخواست رزرو
-            </p></a
-          >
+          <a href="#" class="block">
+            <p class="font-EstedadRegular text-white text-sm">درخواست رزرو</p>
+          </a>
         </div>
       </div>
       <div
-        class="flex flex-col w-[392px] h-[510px] rounded-2xl info-border p-4 gap-2 bg-white"
+        class="flex flex-col max-w-sm w-full h-auto rounded-2xl info-border p-4 gap-2 bg-white"
       >
-        <div class="flex flex-col w-[360px] h-[401px] pb-3 gap-2 border-bottom">
-          <img src="./public/images/reserve/tuscon.png" alt="" />
-          <div class="flex flex-col w-full h-[52px] gap-2 py-2">
-            <h6
-              class="w-full h-[22px] text-[#0C0C0C] text-[16px] font-EstedadSemiBold"
-            >
+        <div
+          class="flex flex-col w-full h-auto pb-3 gap-2 border-b border-gray-200"
+        >
+          <img
+            src="./public/images/reserve/tuscon.png"
+            alt="Car Image"
+            class="w-full h-auto rounded-md"
+          />
+          <div class="flex flex-col w-full h-auto gap-2 py-2">
+            <h6 class="w-full text-[#0C0C0C] text-base font-EstedadSemiBold">
               اجاره هیوندای توسان 2014
             </h6>
-            <div class="flex items-center w-full h-[22px] p-2 gap-1">
-              <p class="text-gray6 text-[10px] font-EstedadRegular">مدل :</p>
-              <p class="text-gray5 text-[10px] font-EstedadRegular">۲۰۱۶</p>
+            <div class="flex items-center w-full gap-1">
+              <p class="text-gray-600 text-xs font-EstedadRegular">مدل :</p>
+              <p class="text-gray-500 text-xs font-EstedadRegular">۲۰۱۶</p>
             </div>
           </div>
           <div
-            class="flex items-center bg-body-gray w-full h-[44px] px-2 rounded-lg gap-2"
+            class="flex items-center bg-body-gray w-full px-2 py-2 rounded-lg gap-2"
           >
-            <p class="text-xs h-[22px] text-gray7 font-EstedadRegular">
+            <p class="text-xs text-gray7 font-EstedadRegular">
               از ۱ تا ۳۰ روز :
             </p>
-            <p
-              class="w-[238px] h-[28px] text-primary-blue font-EstedadSemiBold"
-            >
+            <p class="w-[65%] text-primary-blue font-EstedadSemiBold">
               ۸,۵۰۰,۰۰۰
             </p>
-            <p class="h-[22px] text-xs text-gray5 font-EstedadRegular">
-              روزانه
-            </p>
+            <p class="text-xs text-gray5 font-EstedadRegular">روزانه</p>
           </div>
           <div
-            class="flex items-center bg-body-gray w-full h-[44px] px-2 rounded-lg gap-2"
+            class="flex items-center bg-body-gray w-full px-2 py-2 rounded-lg gap-2"
           >
-            <p class="text-xs h-[22px] text-gray7 font-EstedadRegular">
+            <p class="text-xs text-gray7 font-EstedadRegular">
               از ۱ تا ۳۰ روز :
             </p>
-            <p
-              class="text-[15px] w-[230px] h-[28px] text-primary-blue font-EstedadSemiBold"
-            >
+            <p class="w-[65%] text-primary-blue font-EstedadSemiBold">
               ۸,۵۰۰,۰۰۰
             </p>
-            <p class="h-[22px] text-xs text-gray5 font-EstedadRegular">
-              ماهانه
-            </p>
+            <p class="text-xs text-gray5 font-EstedadRegular">ماهانه</p>
           </div>
         </div>
-        <div class="flex justify-between items-center w-[358px] h-[21px]">
-          <p class="text-xs text-gray7 font-EstedadMedium">مبلغ ضمانت:</p>
-          <p class="text-xs text-gray7 font-EstedadBold">۸۰ میلیون تومان</p>
+        <div class="flex justify-between items-center w-full">
+          <p class="text-xs text-gray-700 font-EstedadMedium">مبلغ ضمانت:</p>
+          <p class="text-xs text-gray-700 font-EstedadBold">۸۰ میلیون تومان</p>
         </div>
         <div
-          class="flex items-center justify-center w-[360px] h-[40px] rounded-lg bg-[#194BF0]"
+          class="flex items-center justify-center w-full py-3 rounded-lg bg-primary-blue"
         >
-          <a href="#" class="block"
-            ><p class="font-EstedadRegular text-white text-sm">
-              درخواست رزرو
-            </p></a
-          >
+          <a href="#" class="block">
+            <p class="font-EstedadRegular text-white text-sm">درخواست رزرو</p>
+          </a>
         </div>
       </div>
       <div
-        class="flex flex-col w-[392px] h-[510px] rounded-2xl info-border p-4 gap-2 bg-white"
+        class="flex flex-col max-w-sm w-full h-auto rounded-2xl info-border p-4 gap-2 bg-white"
       >
-        <div class="flex flex-col w-[360px] h-[401px] pb-3 gap-2 border-bottom">
-          <img src="./public/images/reserve/maseratti.png" alt="" />
-          <div class="flex flex-col w-full h-[52px] gap-2 py-2">
-            <h6
-              class="w-full h-[22px] text-[#0C0C0C] text-[16px] font-EstedadSemiBold"
-            >
-              اجاره بنز sl کروک
+        <div
+          class="flex flex-col w-full h-auto pb-3 gap-2 border-b border-gray-200"
+        >
+          <img
+            src="./public/images/reserve/maseratti.png"
+            alt="Car Image"
+            class="w-full h-auto rounded-md"
+          />
+          <div class="flex flex-col w-full h-auto gap-2 py-2">
+            <h6 class="w-full text-[#0C0C0C] text-base font-EstedadSemiBold">
+              اجاره هیوندای توسان 2014
             </h6>
-            <div class="flex items-center w-full h-[22px] p-2 gap-1">
-              <p class="text-gray6 text-[10px] font-EstedadRegular">مدل :</p>
-              <p class="text-gray5 text-[10px] font-EstedadRegular">۲۰۱۶</p>
+            <div class="flex items-center w-full gap-1">
+              <p class="text-gray-600 text-xs font-EstedadRegular">مدل :</p>
+              <p class="text-gray-500 text-xs font-EstedadRegular">۲۰۱۶</p>
             </div>
           </div>
           <div
-            class="flex items-center bg-body-gray w-full h-[44px] px-2 rounded-lg gap-2"
+            class="flex items-center bg-body-gray w-full px-2 py-2 rounded-lg gap-2"
           >
-            <p class="text-xs h-[22px] text-gray7 font-EstedadRegular">
+            <p class="text-xs text-gray7 font-EstedadRegular">
               از ۱ تا ۳۰ روز :
             </p>
-            <p
-              class="w-[238px] h-[28px] text-primary-blue font-EstedadSemiBold"
-            >
+            <p class="w-[65%] text-primary-blue font-EstedadSemiBold">
               ۸,۵۰۰,۰۰۰
             </p>
-            <p class="h-[22px] text-xs text-gray5 font-EstedadRegular">
-              روزانه
-            </p>
+            <p class="text-xs text-gray5 font-EstedadRegular">روزانه</p>
           </div>
           <div
-            class="flex items-center bg-body-gray w-full h-[44px] px-2 rounded-lg gap-2"
+            class="flex items-center bg-body-gray w-full px-2 py-2 rounded-lg gap-2"
           >
-            <p class="text-xs h-[22px] text-gray7 font-EstedadRegular">
+            <p class="text-xs text-gray7 font-EstedadRegular">
               از ۱ تا ۳۰ روز :
             </p>
-            <p
-              class="text-[15px] w-[230px] h-[28px] text-primary-blue font-EstedadSemiBold"
-            >
+            <p class="w-[65%] text-primary-blue font-EstedadSemiBold">
               ۸,۵۰۰,۰۰۰
             </p>
-            <p class="h-[22px] text-xs text-gray5 font-EstedadRegular">
-              ماهانه
-            </p>
+            <p class="text-xs text-gray5 font-EstedadRegular">ماهانه</p>
           </div>
         </div>
-        <div class="flex justify-between items-center w-[358px] h-[21px]">
-          <p class="text-xs text-gray7 font-EstedadMedium">مبلغ ضمانت:</p>
-          <p class="text-xs text-gray7 font-EstedadBold">۸۰ میلیون تومان</p>
+        <div class="flex justify-between items-center w-full">
+          <p class="text-xs text-gray-700 font-EstedadMedium">مبلغ ضمانت:</p>
+          <p class="text-xs text-gray-700 font-EstedadBold">۸۰ میلیون تومان</p>
         </div>
         <div
-          class="flex items-center justify-center w-[360px] h-[40px] rounded-lg bg-[#194BF0]"
+          class="flex items-center justify-center w-full py-3 rounded-lg bg-primary-blue"
         >
-          <a href="#" class="block"
-            ><p class="font-EstedadRegular text-white text-sm">
-              درخواست رزرو
-            </p></a
-          >
+          <a href="#" class="block">
+            <p class="font-EstedadRegular text-white text-sm">درخواست رزرو</p>
+          </a>
         </div>
       </div>
     </div>
     <!-- #endregion -->
     <!-- #endregion -->
     <!-- #region steps-->
+
     <div
-      class="w-[845px] h-[109px] flex flex-col items-center gap-5 absolute top-[2880px] left-head-center"
+      class="w-[845px] h-[109px] hidden lg:flex flex-col items-center gap-5 absolute top-[2880px] left-head-center"
     >
       <p class="font-EstedadExtraLight text-gray3 text-2xl">چگونه در وبسایت</p>
       <p class="font-EstedadBold text-gray4 text-[32px]">
@@ -790,28 +873,32 @@
         خودرو رزرو کنیم؟
       </p>
     </div>
-    <div class="h-20 absolute top-[3033px] right-[85px] z-0">
+    <div class="hidden lg:block h-20 absolute top-[3033px] right-[85px] z-0">
       <img src="./public/images/steps/1.png" alt="" class="" />
     </div>
-    <div class="h-20 absolute top-[3033px] left-[85px] z-0">
+    <div class="hidden lg:block h-20 absolute top-[3033px] left-[85px] z-0">
       <img src="./public/images/steps/2.png" alt="" class="" />
     </div>
-    <div class="h-20 absolute top-[3560px] right-[85px] z-0">
+    <div class="hidden lg:block h-20 absolute top-[3560px] right-[85px] z-0">
       <img src="./public/images/steps/3.png" alt="" class="" />
     </div>
-    <div class="h-20 absolute top-[3560px] left-[85px] z-0">
+    <div class="hidden lg:block h-20 absolute top-[3560px] left-[85px] z-0">
       <img src="./public/images/steps/4.png" alt="" class="" />
     </div>
-    <div class="w-[392px] h-[893px] absolute top-[3073px] left-steps-center">
+    <div
+      class="hidden lg:block w-[392px] h-[893px] absolute top-[3073px] left-steps-center"
+    >
       <img src="./public/images/steps/stepback.png" alt="" />
     </div>
-    <div class="flex flex-row gap-4 absolute top-[3100px] right-[108px] z-10">
+    <div
+      class="lg:flex hidden flex-row gap-4 absolute top-[3100px] right-[108px] z-10"
+    >
       <div
         class="flex items-center justify-center w-20 h-20 bg-white rounded-2xl info-border"
       >
         <img src="./public/images/steps/car.svg" alt="" />
       </div>
-      <div class="w-[270px] h-[92px] flex flex-col gap-2">
+      <div class="w-[270px] h-[92px] hidden lg:flex flex-col gap-2">
         <h4 class="text-2xl leading-[140%] font-bold font-EstedadMedium">
           <span class="text-mustard"> خودروی </span>
           خود را انتخاب کنید.
@@ -823,7 +910,9 @@
         </p>
       </div>
     </div>
-    <div class="flex flex-row gap-4 absolute top-[3100px] left-[104px] z-10">
+    <div
+      class="lg:flex hidden flex-row gap-4 absolute top-[3100px] left-[104px] z-10"
+    >
       <div class="w-[270px] h-[92px] flex flex-col gap-2">
         <h4 class="text-2xl leading-[140%] font-bold font-EstedadMedium">
           <span class="text-mustard">تاریخ</span>
@@ -841,7 +930,9 @@
         <img src="./public/images/steps/calendar-tick.svg" alt="" />
       </div>
     </div>
-    <div class="flex flex-row gap-4 absolute top-[3635px] right-[108px] z-10">
+    <div
+      class="lg:flex hidden flex-row gap-4 absolute top-[3635px] right-[108px] z-10"
+    >
       <div
         class="flex items-center justify-center w-20 h-20 bg-white rounded-2xl info-border"
       >
@@ -860,7 +951,9 @@
         </p>
       </div>
     </div>
-    <div class="flex flex-row gap-4 absolute top-[3635px] left-[108px] z-10">
+    <div
+      class="lg:flex hidden flex-row gap-4 absolute top-[3635px] left-[108px] z-10"
+    >
       <div class="w-[270px] h-[92px] flex flex-col gap-2">
         <h4 class="text-2xl leading-[140%] font-bold font-EstedadMedium">
           <span class="text-mustard">خودرو</span>
@@ -881,7 +974,7 @@
     <!-- #endregion -->
     <!-- #region Questions-->
     <div
-      class="flex flex-col items-center gap-5 w-[845px] h-[109px] absolute top-[4022px] left-head-center bg-transparent"
+      class="flex flex-col my-4  items-center gap-5 lg:w-[845px] lg:h-[109px] lg:absolute top-[4022px] left-head-center bg-transparent"
     >
       <p class="font-EstedadExtraLight text-2xl text-gray3">
         پر تکرارترین سؤالاتی که پرسیدید
@@ -891,15 +984,15 @@
         <span class="font-EstedadBold text-mustard text-[32px]">متداول</span>
       </p>
     </div>
-    <!-- #region common-->
+    <!-- #region common-desktop-->
     <div
-      class="flex flex-col items-center justify-between w-[1224px] h-[459px] absolute top-[4141px] left-main gap-6"
+      class="lg:flex hidden flex-col items-center justify-between w-[90%] lg:h-[459px] lg:absolute top-[4141px] left-main gap-6"
     >
       <div
-        class="flex flex-col items-center absolute right-0 gap-4 w-[808px] h-[459px]"
+        class="flex flex-col items-center absolute right-0 gap-4 w-[60%] h-[459px]"
       >
         <div
-          class="flex items-center gap-2 w-[808px] h-[76px] info-border rounded-2xl py-6 px-4 bg-white"
+          class="flex items-center gap-2 w-full h-[76px] info-border rounded-2xl py-6 px-4 bg-white"
         >
           <img src="./public/images/svg/add-square.svg" alt="" />
           <p class="text-gray4 font-EstedadRegular">
@@ -907,7 +1000,7 @@
           </p>
         </div>
         <div
-          class="flex flex-col items-center gap-2 w-[808px] h-[183px] info-border rounded-2xl py-6 px-4 bg-white"
+          class="flex flex-col items-center gap-2 w-full h-[183px] info-border rounded-2xl py-6 px-4 bg-white"
         >
           <div class="flex w-full h-[28px] gap-2">
             <img src="./public/images/svg/minus-square.svg" alt="" />
@@ -916,7 +1009,7 @@
             </p>
           </div>
           <p
-            class="w-[776px] h-[107px] text-[14px] text-[#727272] font-EsRegular leading-8"
+            class="w-[90%] h-[107px] text-[14px] text-[#727272] font-EstedadRegular leading-8"
           >
             در زمان اجاره خودرو بدون راننده خودروها کارواش شده و با باک بنزین پر
             تحویل مشتریان عزیز می گردد. در زمان استرداد خودرو در صورتی که خودرو
@@ -925,7 +1018,7 @@
           </p>
         </div>
         <div
-          class="flex items-center gap-2 w-[808px] h-[76px] info-border rounded-2xl py-6 px-4 bg-white"
+          class="flex items-center gap-2 w-full h-[76px] info-border rounded-2xl py-6 px-4 bg-white"
         >
           <img src="./public/images/svg/add-square.svg" alt="" />
           <p class="text-gray4 font-EstedadRegular">
@@ -933,7 +1026,7 @@
           </p>
         </div>
         <div
-          class="flex items-center gap-2 w-[808px] h-[76px] info-border rounded-2xl py-6 px-4 bg-white"
+          class="flex items-center gap-2 w-full h-[76px] info-border rounded-2xl py-6 px-4 bg-white"
         >
           <img src="./public/images/svg/add-square.svg" alt="" />
           <p class="text-gray4 font-EstedadRegular">
@@ -943,7 +1036,7 @@
       </div>
 
       <div
-        class="flex flex-col items-center absolute top left-0 w-[392px] h-[459px]"
+        class="flex flex-col items-center absolute top left-0 w-[30%] h-[459px]"
       >
         <img
           class="rounded-2xl"
@@ -954,11 +1047,61 @@
     </div>
 
     <!-- #endregion -->
-
+    <!-- #region common-mobile-->
+    <div class="flex lg:hidden flex-col w-[90%] mx-auto gap-4 my-2">
+      <div
+        class="w-full info-border p-4 bg-white rounded-lg flex flex-col items-center justify-center"
+      >
+        <div class="flex gap-4 items-center">
+          <img src="./public/images/svg/add-square.svg" alt="" />
+          <p class="text-gray4 font-EstedadRegular">
+            در صورت بروز نقص فنی برای خودرو چه اتفاقی می افتد؟
+          </p>
+        </div>
+      </div>
+      <div
+        class="w-full info-border p-4 bg-white rounded-lg flex flex-col items-center justify-center"
+      >
+        <div class="flex gap-4 items-center">
+          <img src="./public/images/svg/minus-square.svg" alt="" />
+          <p class="text-gray4 font-EstedadRegular">
+            هزینه بنزین و کارواش در خودروهای اجاره ای به عهده کیست؟
+          </p>
+        </div>
+        <p class="text-sm text-[#727272] font-EstedadRegular leading-8">
+          در زمان اجاره خودرو بدون راننده خودروها کارواش شده و با باک بنزین پر
+          تحویل مشتریان عزیز می گردد. در زمان استرداد خودرو در صورتی که خودرو به
+          کارواش نیاز داشته و یا خودرو دارای کسر سوخت باشد هزینه آن بر عهده
+          مشتری می باشد.
+        </p>
+      </div>
+      <div
+        class="w-full info-border p-4 bg-white rounded-lg flex flex-col items-center justify-center"
+      >
+        <div class="flex gap-4 items-center">
+          <img src="./public/images/svg/add-square.svg" alt="" />
+          <p class="text-gray4 font-EstedadRegular">
+            محدودیت کیلومتر در اجاره خودرو چقدر می باشد؟
+          </p>
+        </div>
+      </div>
+      <div
+        class="w-full info-border p-4 bg-white rounded-lg flex flex-col items-center justify-center"
+      >
+        <div class="flex gap-4 items-center">
+          <img src="./public/images/svg/add-square.svg" alt="" />
+          <p class="text-gray4 font-EstedadRegular">
+            آیا ماشین های اتورنت دارای بیمه هستند؟
+           </p>
+        </div>
+      </div>
+      <img src="./public/images/questions/gentleman.png" alt="" class="rounded-xl">
+    </div>
+    <!-- #endregion -->
     <!-- #endregion -->
     <!-- #region Comments-->
     <div
-      class="flex flex-col items-center gap-5 w-[845px] h-[109px] absolute top-[4648px] left-head-center bg-transparent"
+      class="flex flex-col items-center my-2 gap-5 lg:w-[845px] lg:h-[109px] lg:absolute top-[4648px] left-head-center bg-transparent"
     >
       <p class="font-EstedadExtraLight text-2xl text-gray3">
         آنچه مشتریان ما درموردمان گفته‌اند.
@@ -969,14 +1112,14 @@
       </p>
     </div>
     <div
-      class="flex items-center rounded-2xl flex-col gap-6 absolute left-image top-[4767px] w-[90%] h-[511px]"
+      class="flex  items-center rounded-2xl flex-col gap-6 lg:absolute mx-auto left-image top-[4767px] w-[90%] lg:h-[511px]"
     >
       <div
-        class="flex flex-col items-center py-4 bg-white rounded-2xl info-border w-full h-[391px]"
+        class="flex  flex-col items-center py-4 bg-white rounded-2xl info-border w-full h-[391px]"
       >
         <img src="./public/images/comments/user.png" alt="" />
         <p
-          class="w-[776px] h-[107px] text-center text-gray8 text-sm font-EstedadRegular leading-[180%]"
+          class="lg:w-[776px] lg:h-[107px] lg:line-clamp-none line-clamp-3 w-[90%] text-center text-gray8 text-sm font-EstedadRegular leading-[180%]"
         >
           اولین بار بود که برای مسافرت ماشین اجاره می‌کردم و به دنبال یک شرکت با
           سابقه و مطمئن می‌گشتم!<br />بدون هیچ شکی میگم، اتو رنت تو کار خودش
@@ -985,9 +1128,9 @@
           سراغشون میام.
         </p>
       </div>
-      <div class="flex items-center justify-between w-full h-[96px]">
+      <div class="flex flex-col lg:flex-row gap-y-4 items-center justify-between w-full lg:h-[96px]">
         <div
-          class="flex w-[288px] h-full gap-4 rounded-2xl info-border py-4 pr-14 bg-primary-yellow"
+          class="flex lg:w-[288px] w-2/3 lg:h-full gap-4 rounded-2xl info-border p-5 lg:py-4 lg:pr-14 bg-primary-yellow"
         >
           <img src="./public/images/comments/olduz.png" alt="" />
 
@@ -1001,24 +1144,24 @@
           </div>
         </div>
         <div
-          class="flex w-[288px] h-full gap-4 rounded-2xl info-border py-4 px-14 bg-white"
+          class="flex lg:w-[288px] w-2/3 lg:h-full gap-4 rounded-2xl info-border p-5 lg:py-4 lg:px-14 bg-white"
         >
           <img src="./public/images/comments/mmd.png" alt="" />
           <div class="flex flex-col gap-4 items-center">
             <p
-              class="w-[111px] h-[61px] pt-1 text-gray7 text-[15px] font-bold font-EstedadRegular"
+              class=" pt-1 text-gray7 text-[15px] font-bold font-EstedadRegular"
             >
               محمدجواد امینی
             </p>
             <p
-              class="w-[111px] h-[61px] text-gray5 text-sm font-EstedadRegular"
+              class=" text-gray5 text-sm font-EstedadRegular"
             >
               ۲۷ دی ماه ۱۳۹۹
             </p>
           </div>
         </div>
         <div
-          class="flex w-[288px] h-full gap-4 rounded-2xl info-border py-4 px-14 bg-white"
+          class="flex lg:w-[288px] w-2/3 lg:h-full gap-4 rounded-2xl info-border p-5 lg:py-4 lg:px-14 bg-white"
         >
           <img src="./public/images/comments/farzane.png" alt="" />
 
@@ -1032,17 +1175,17 @@
           </div>
         </div>
         <div
-          class="flex w-[288px] h-full gap-4 rounded-2xl info-border py-4 px-14 bg-white"
+          class="flex lg:w-[288px] w-2/3 lg:h-full gap-4 rounded-2xl info-border p-5 lg:py-4 lg:px-14 bg-white"
         >
           <img src="./public/images/comments/fateme.png" alt="" />
           <div class="flex flex-col gap-4 items-center">
             <p
-              class="w-[118px] h-[61px] pt-1 text-gray7 font-bold text-[15px] font-EstedadRegular"
+              class=" pt-1 text-gray7 font-bold text-[15px] font-EstedadRegular"
             >
               فاطمه ابراهیمی‌فر
             </p>
             <p
-              class="w-[118px] h-[61px] text-gray5 text-sm font-EstedadRegular"
+              class=" text-gray5 text-sm font-EstedadRegular"
             >
               ۲۷ دی ماه ۱۳۹۹
             </p>
@@ -1054,7 +1197,7 @@
     <!-- #endregion -->
     <!-- #region magazine-->
     <div
-      class="flex flex-col items-center gap-5 w-[845px] h-[109px] absolute top-[5326px] left-head-center bg-transparent"
+      class="flex flex-col items-center my-4 gap-5 lg:w-[845px] lg:h-[109px] lg:absolute top-[5326px] left-head-center bg-transparent"
     >
       <p class="font-EstedadRegular text-2xl text-gray3">مقالات ما</p>
       <p class="font-EstedadBold text-gray4 text-[32px]">
@@ -1063,14 +1206,14 @@
       </p>
     </div>
     <div
-      class="flex w-[184px] h-[48px] items-center justify-center gap-2 rounded-[8px] absolute top-[5373px] left-[115px]"
+      class="flex lg:w-[184px] lg:h-[48px] items-center justify-center gap-2 rounded-[8px] lg:absolute top-[5373px] left-[115px]"
     >
       <p class="text-primary-blue text-lg font-EstedadMedium">مشاهده همه</p>
       <img src="./public/images/svg/arrow-left-mojood.svg" alt="" />
     </div>
     <!-- #region rentMethos-->
     <div
-      class="flex justify-between items-center w-[1224px] h-[370px] absolute top-[5445px] left-main gap-6"
+      class="flex flex-col lg:flex-row mx-auto justify-between items-center w-[90%] lg:h-[370px] lg:absolute top-[5445px] left-main gap-6"
     >
       <div
         class="flex flex-col items-center gap-2 p-4 w-[391px] h-[370px] info-border rounded-2xl bg-white"
@@ -1183,10 +1326,10 @@
 
     <!-- #region footer-desktop-->
     <div
-      class="hidden lg:flex flex-col items-center absolute gap-4 top-[5850px] left-main rounded-2xl py-14 px-6 w-[1224px] h-[432px] bg-[#1E1E1EE5] shadow-md shadow-[#2b2b2b]"
+      class="hidden lg:flex flex-col items-center absolute gap-4 top-[5850px] left-main rounded-2xl py-14 px-6 w-[90%] h-[432px] bg-[#1E1E1EE5] shadow-md shadow-[#2b2b2b]"
     >
       <div
-        class="flex items-center gap-[81px] w-[1120px] h-[101px] footer-border rounded-2xl p-4"
+        class="flex items-center gap-[81px] w-[95%] h-[101px] footer-border rounded-2xl p-4"
       >
         <div
           class="flex gap-4 items-center py-4 pr-9 w-[254.66665649414062px] h-[69px]"
@@ -1249,7 +1392,7 @@
 
       <!-- #region autorent-->
 
-      <div class="flex items-center footer-bottom gap-4 w-[1120px] h-[233px]">
+      <div class="flex items-center footer-bottom gap-4 w-[95%] h-[233px]">
         <div class="flex w-[1115px] gap-[88px] h-[168px]">
           <div class="flex flex-col pr-[98px] gap-6 w-[407px] h-[168px]">
             <img
@@ -1272,8 +1415,8 @@
             <p class="text-[12px] text-white font-EstedadRegular">
               سوالات متداول
             </p>
-            <p class="text-[12px] text-white font-EsRegular">تماس با ما</p>
-            <p class="text-[12px] text-white font-EsRegular">درباره ما</p>
+            <p class="text-[12px] text-white font-EstedadRegular">تماس با ما</p>
+            <p class="text-[12px] text-white font-EstedadRegular">درباره ما</p>
           </div>
           <div class="flex flex-col my-[44px] gap-3 w-[320px] h-[80px]">
             <p class="text-white text-md font-EstedadRegular">خبرنامه</p>
@@ -1403,11 +1546,13 @@
             <p class="text-[12px] text-white font-EstedadRegular">
               سوالات متداول
             </p>
-            <p class="text-[12px] text-white font-EsRegular">تماس با ما</p>
-            <p class="text-[12px] text-white font-EsRegular">درباره ما</p>
+            <p class="text-[12px] text-white font-EstedadRegular">تماس با ما</p>
+            <p class="text-[12px] text-white font-EstedadRegular">درباره ما</p>
           </div>
           <div class="flex flex-col my-[44px] gap-3 w-[320px] h-[80px]">
-            <p class="text-white text-md text-center font-EstedadRegular">خبرنامه</p>
+            <p class="text-white text-md text-center font-EstedadRegular">
+              خبرنامه
+            </p>
             <div
               class="flex items-center w-[320px] footer-border p-2 rounded-lg h-[40px]"
             >
